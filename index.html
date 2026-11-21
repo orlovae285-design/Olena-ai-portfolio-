@@ -65,12 +65,11 @@
   .cap{font-size:13px;color:var(--muted);margin-top:10px;letter-spacing:.02em}
   .tag{font-size:10.5px;letter-spacing:.16em;color:var(--champagne-2);margin-bottom:6px;text-transform:uppercase}
   .vid-sec{background:var(--bg-2);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
-  .vid-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .vid-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:18px}
   .vcard video{width:100%;aspect-ratio:9/16;object-fit:cover;background:#000;display:block;border-radius:12px;border:1px solid var(--hair)}
   .vcard .meta{padding:12px 2px 0}
   .vcard h4{font-size:17px;margin-bottom:3px}
-  @media(max-width:860px){.vid-grid{grid-template-columns:1fr 1fr}}
-  @media(max-width:480px){.vid-grid{grid-template-columns:1fr}}
+  @media(max-width:520px){.vid-grid{grid-template-columns:1fr 1fr;gap:12px}}
   .vid-grid.three{grid-template-columns:repeat(3,1fr);gap:22px}
   @media(max-width:860px){.vid-grid.three{grid-template-columns:1fr 1fr}}
   @media(max-width:480px){.vid-grid.three{grid-template-columns:1fr}}
@@ -91,6 +90,8 @@
   .avatar-band{text-align:center}
   .avatar-band h2{font-size:clamp(28px,4vw,46px);font-weight:300;max-width:20ch;margin:0 auto 18px}
   .avatar-chips{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+  .avatar-vid{max-width:280px;margin:34px auto 0}
+  .avatar-vid video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:14px;border:1px solid var(--hair-strong);background:#000;cursor:zoom-in}
   .avatar-chips span{font-size:12px;letter-spacing:.1em;color:var(--muted);border:1px solid var(--hair);border-radius:100px;padding:6px 14px}
   .ba-sec{background:var(--bg-2);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
   .ba-block{margin-top:34px}
@@ -206,14 +207,14 @@
 </div></section>
 
 <section id="video" class="vid-sec"><div class="wrap">
-  <div class="sec-head"><div class="eyebrow">Video Portfolio</div><h2>AI Video &amp; <span class="champ">Reels</span></h2><p>Вертикальні роботи показані у 9:16, кінематографічний ролик — у 16:9. Без розтягування та обрізання формату.</p><span class="ratio-tag">9:16 + 16:9</span></div>
+  <div class="sec-head"><div class="eyebrow">Video Portfolio</div><h2>AI Video &amp; <span class="champ">Reels</span></h2><p>Рекламні ролики, Reels і короткі AI-фільми у вертикальному форматі 9:16. Натисніть на ролик, щоб подивитися на весь екран.</p><span class="ratio-tag">9:16</span></div>
   <div class="vid-grid">
-    <div class="vcard"><video src="assets/video-03.mp4" muted loop playsinline preload="metadata"></video><div class="meta"><div class="tag">AI Advertising · 9:16</div><h4>Кінематографічна реклама</h4><div class="cap">Concept · generation · edit</div></div></div>
-    <div class="vcard"><video src="assets/video-04.mp4" muted loop playsinline preload="metadata"></video><div class="meta"><div class="tag">AI Story · 9:16</div><h4>Візуальна історія</h4><div class="cap">Storytelling · atmosphere</div></div></div>
-    <div class="vcard"><video src="assets/video-05.mp4" muted loop playsinline preload="metadata"></video><div class="meta"><div class="tag">Social · 9:16</div><h4>Reels &amp; Social</h4><div class="cap">Hook · visual direction</div></div></div>
-    <div class="vcard"><video src="assets/video-06.mp4" muted loop playsinline preload="metadata"></video><div class="meta"><div class="tag">Cinematic · 9:16</div><h4>AI cinematic short</h4><div class="cap">Scenes · rhythm · sound</div></div></div>
+    <div class="vcard"><video src="assets/video-03.mp4" poster="assets/video-03-poster.webp" muted loop playsinline preload="metadata"></video><div class="meta"><div class="tag">AI Advertising · 9:16</div><h4>Кінематографічна реклама</h4><div class="cap">Concept · generation · edit</div></div></div>
+    <div class="vcard"><video src="assets/video-04.mp4" poster="assets/video-04-poster.webp" muted loop playsinline preload="metadata"></video><div class="meta"><div class="tag">AI Story · 9:16</div><h4>Візуальна історія</h4><div class="cap">Storytelling · atmosphere</div></div></div>
+    <div class="vcard"><video src="assets/video-05.mp4" poster="assets/video-05-poster.webp" muted loop playsinline preload="metadata"></video><div class="meta"><div class="tag">Social · 9:16</div><h4>Reels &amp; Social</h4><div class="cap">Hook · visual direction</div></div></div>
+    <div class="vcard"><video src="assets/video-06.mp4" poster="assets/video-06-poster.webp" muted loop playsinline preload="metadata"></video><div class="meta"><div class="tag">Cinematic · 9:16</div><h4>AI cinematic short</h4><div class="cap">Scenes · rhythm · sound</div></div></div>
+    <div class="vcard"><video src="assets/cinematic-9x16.mp4" poster="assets/cinematic-9x16-poster.webp" muted loop playsinline preload="metadata"></video><div class="meta"><div class="tag">Short Film · 9:16 · 58 с</div><h4>Кінематографічний AI-фільм</h4><div class="cap">Story · emotion · cinematography</div></div></div>
   </div>
-  <div class="vwide"><video src="assets/cinematic-9x16.mp4" muted loop playsinline preload="metadata"></video><div class="meta" style="padding-top:12px"><div class="tag">Cinematic · 9:16</div><h4 style="font-size:20px">Кінематографічний AI-проєкт</h4></div></div>
 </div></section>
 
 <section id="brand" class="brand-sec"><div class="wrap">
@@ -238,6 +239,7 @@
   <h2>Ваш бренд може <span class="champ">говорити сам</span></h2>
   <p style="color:var(--muted);max-width:46ch;margin:0 auto">AI-аватар для презентації продуктів, послуг, експертного та рекламного контенту.</p>
   <div class="avatar-chips"><span>Avatar</span><span>Voice</span><span>Script</span><span>Visuals</span><span>Editing</span></div>
+  <div class="avatar-vid"><video src="assets/video-01.mp4" poster="assets/video-01-poster.webp" muted loop playsinline preload="metadata"></video><div class="cap">AI Avatar · презентація бренду · 9:16</div></div>
 </div></section>
 
 <section class="ba-sec"><div class="wrap">
@@ -335,7 +337,7 @@
   ];
   document.getElementById("niches").innerHTML=niches.map(n=>`
     <div class="niche"><div class="nhead"><h3>${n.h}</h3><div class="nsub">${n.sub}</div><div class="nratio">${n.r}</div></div>
-    ${n.beauty?`<div class="beauty-row"><div class="frame"><img src="assets/${n.items[0][0]}.webp" alt="${n.items[0][1]}" loading="lazy"><div style="padding:10px 12px"><div class="tag">Beauty</div><div class="cap" style="margin:0">${n.items[0][1]}</div></div></div>${n.vids.map(v=>`<div><video src="assets/${v[0]}.mp4" muted loop playsinline preload="metadata"></video><div class="cap">${v[1]}</div></div>`).join("")}</div>`:`<div class="mason">${n.items.map(it=>`<div class="item"><div class="frame"><img src="assets/${it[0]}.webp" alt="${it[1]}" loading="lazy"></div><div class="cap">${it[1]}</div></div>`).join("")}</div>`}
+    ${n.beauty?`<div class="beauty-row"><div class="frame"><img src="assets/${n.items[0][0]}.webp" alt="${n.items[0][1]}" loading="lazy"><div style="padding:10px 12px"><div class="tag">Beauty</div><div class="cap" style="margin:0">${n.items[0][1]}</div></div></div>${n.vids.map(v=>`<div><video src="assets/${v[0]}.mp4" poster="assets/${v[0]}-poster.webp" muted loop playsinline preload="metadata"></video><div class="cap">${v[1]}</div></div>`).join("")}</div>`:`<div class="mason">${n.items.map(it=>`<div class="item"><div class="frame"><img src="assets/${it[0]}.webp" alt="${it[1]}" loading="lazy"></div><div class="cap">${it[1]}</div></div>`).join("")}</div>`}
     </div>`).join("");
   const reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   document.querySelectorAll("video:not(.no-lightbox)").forEach(vid=>{const t=vid.parentElement;if(!reduce){t.addEventListener("mouseenter",()=>vid.play().catch(()=>{}));t.addEventListener("mouseleave",()=>{vid.pause();vid.currentTime=0;});}});
