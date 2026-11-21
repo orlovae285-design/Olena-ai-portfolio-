@@ -44,6 +44,17 @@
   .hero h1{font-size:clamp(42px,7vw,84px);max-width:15ch;margin-bottom:26px;font-weight:300}
   .hero p.lead{font-size:clamp(16px,2vw,19px);color:var(--muted);max-width:56ch;margin-bottom:40px;line-height:1.65}
   .hero-btns{display:flex;gap:15px;flex-wrap:wrap}
+  .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
+  .hero-reel{position:relative;justify-self:end;width:100%;max-width:340px}
+  .hero-reel video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:20px;border:1px solid var(--hair-strong);background:#000;box-shadow:0 40px 100px -30px rgba(0,0,0,.9),0 0 80px -20px rgba(216,198,164,.25)}
+  .reel-tag{position:absolute;left:14px;bottom:14px;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--champagne-1);background:rgba(10,11,14,.6);backdrop-filter:blur(6px);border:1px solid var(--hair-strong);border-radius:100px;padding:5px 12px}
+  @media(max-width:860px){.hero{padding-top:120px}.hero-grid{grid-template-columns:1fr;gap:36px}.hero-reel{justify-self:center;max-width:300px}}
+  .lb{position:fixed;inset:0;z-index:100;background:rgba(5,6,8,.92);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;padding:24px}
+  .lb.open{display:flex}
+  .lb video{max-width:min(92vw,1200px);max-height:86vh;width:auto;height:auto;border-radius:14px;border:1px solid var(--hair-strong);background:#000}
+  .lb-close{position:absolute;top:18px;right:22px;width:44px;height:44px;border-radius:50%;border:1px solid var(--hair-strong);background:var(--glass);color:var(--pearl);font-size:22px;cursor:pointer}
+  .lb-close:hover{color:var(--champagne-2);border-color:var(--champagne-2)}
+  .vcard video,.beauty-row video,.vwide video,.story-grid video{cursor:zoom-in}
   .btn{padding:14px 28px;border-radius:100px;font-size:15px;font-weight:500;letter-spacing:.02em;transition:all .3s;cursor:pointer;border:1px solid transparent;font-family:'Manrope'}
   .btn-primary{background:linear-gradient(105deg,var(--champagne-1),var(--champagne-2) 45%,var(--champagne-3));color:#1a1508}
   .btn-primary:hover{filter:brightness(1.08);transform:translateY(-2px)}
@@ -184,11 +195,14 @@
   <a href="#contact" class="nav-cta">Обговорити проєкт</a>
 </div></header>
 
-<section class="hero"><div class="wrap">
+<section class="hero"><div class="wrap hero-grid">
+  <div>
   <div class="hero-tag">AI CREATOR · VIDEO · DIGITAL SOLUTIONS</div>
   <h1>AI-контент, який <span class="champ">працює на бренд</span></h1>
   <p class="lead">Рекламні AI-ролики, Reels, product visuals, каруселі, AI-аватари, сайти, landing pages та digital-рішення.</p>
-  <div class="hero-btns"><a href="#video" class="btn btn-primary">Дивитися роботи</a><a href="#contact" class="btn btn-ghost">Обговорити проєкт</a></div>
+  <div class="hero-btns"><a href="#brand" class="btn btn-primary">Дивитися роботи</a><a href="#contact" class="btn btn-ghost">Обговорити проєкт</a></div>
+  </div>
+  <div class="hero-reel"><video class="no-lightbox" src="assets/showreel-9x16.mp4" poster="assets/showreel-9x16-poster.webp" autoplay muted loop playsinline preload="auto" aria-label="Шоурил робіт"></video><span class="reel-tag">Showreel · 2026</span></div>
 </div></section>
 
 <section id="video" class="vid-sec"><div class="wrap">
@@ -324,7 +338,14 @@
     ${n.beauty?`<div class="beauty-row"><div class="frame"><img src="assets/${n.items[0][0]}.webp" alt="${n.items[0][1]}" loading="lazy"><div style="padding:10px 12px"><div class="tag">Beauty</div><div class="cap" style="margin:0">${n.items[0][1]}</div></div></div>${n.vids.map(v=>`<div><video src="assets/${v[0]}.mp4" muted loop playsinline preload="metadata"></video><div class="cap">${v[1]}</div></div>`).join("")}</div>`:`<div class="mason">${n.items.map(it=>`<div class="item"><div class="frame"><img src="assets/${it[0]}.webp" alt="${it[1]}" loading="lazy"></div><div class="cap">${it[1]}</div></div>`).join("")}</div>`}
     </div>`).join("");
   const reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  document.querySelectorAll("video").forEach(vid=>{const t=vid.parentElement;if(!reduce){t.addEventListener("mouseenter",()=>vid.play().catch(()=>{}));t.addEventListener("mouseleave",()=>{vid.pause();vid.currentTime=0;});}vid.addEventListener("click",()=>{vid.paused?vid.play():vid.pause();});});
+  document.querySelectorAll("video:not(.no-lightbox)").forEach(vid=>{const t=vid.parentElement;if(!reduce){t.addEventListener("mouseenter",()=>vid.play().catch(()=>{}));t.addEventListener("mouseleave",()=>{vid.pause();vid.currentTime=0;});}});
+  const lb=document.createElement("div");lb.className="lb";lb.setAttribute("role","dialog");lb.setAttribute("aria-modal","true");
+  lb.innerHTML='<button class="lb-close" aria-label="Закрити">×</button><video controls playsinline></video>';document.body.appendChild(lb);
+  const lbv=lb.querySelector("video");
+  const closeLb=()=>{lbv.pause();lbv.removeAttribute("src");lbv.load();lb.classList.remove("open");document.body.style.overflow="";};
+  lb.addEventListener("click",e=>{if(e.target===lb||e.target.classList.contains("lb-close"))closeLb();});
+  document.addEventListener("keydown",e=>{if(e.key==="Escape"&&lb.classList.contains("open"))closeLb();});
+  document.querySelectorAll("video:not(.no-lightbox)").forEach(v=>{if(v.closest(".lb"))return;v.addEventListener("click",()=>{v.pause();lbv.src=v.currentSrc||v.src;lbv.poster=v.poster||"";lb.classList.add("open");document.body.style.overflow="hidden";lbv.play().catch(()=>{});});});
   if(!reduce&&window.matchMedia("(hover: none)").matches&&"IntersectionObserver" in window){const io=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting){v.preload="auto";v.play().catch(()=>{});}else v.pause();}),{threshold:.6});document.querySelectorAll("video").forEach(v=>io.observe(v));}
 </script>
 </body>
