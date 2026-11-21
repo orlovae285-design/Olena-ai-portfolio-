@@ -60,6 +60,21 @@
   .vcard h4{font-size:17px;margin-bottom:3px}
   @media(max-width:860px){.vid-grid{grid-template-columns:1fr 1fr}}
   @media(max-width:480px){.vid-grid{grid-template-columns:1fr}}
+  .vid-grid.three{grid-template-columns:repeat(3,1fr);gap:22px}
+  @media(max-width:860px){.vid-grid.three{grid-template-columns:1fr 1fr}}
+  @media(max-width:480px){.vid-grid.three{grid-template-columns:1fr}}
+  .brand-sec{position:relative;overflow:hidden}
+  .brand-sec::after{content:"";position:absolute;top:10%;left:-15%;width:60%;height:80%;background:radial-gradient(circle,rgba(216,198,164,.09),transparent 60%);pointer-events:none}
+  .brand-sec .wrap{position:relative;z-index:1}
+  .case-note{font-size:13px;color:var(--muted);margin-top:6px;line-height:1.5}
+  .story-sec{background:var(--bg-2);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
+  .story-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:40px;align-items:center}
+  .story-grid video{width:100%;aspect-ratio:16/9;object-fit:cover;background:#000;border-radius:12px;border:1px solid var(--hair-strong)}
+  .story-text h3{font-size:clamp(24px,3.2vw,36px);font-weight:300;margin-bottom:14px}
+  .story-text p{color:var(--muted);font-size:15px;margin-bottom:14px;line-height:1.6}
+  .story-text ul{list-style:none;color:var(--muted);font-size:14px;line-height:1.9}
+  .story-text li::before{content:"— ";color:var(--champagne-2)}
+  @media(max-width:860px){.story-grid{grid-template-columns:1fr;gap:26px}}
   .vwide{margin-top:26px}
   .vwide video{width:100%;aspect-ratio:16/9;object-fit:cover;background:#000;border-radius:12px;border:1px solid var(--hair)}
   .avatar-band{text-align:center}
@@ -165,7 +180,7 @@
 <a id="home"></a>
 <header class="nav"><div class="wrap nav-inner">
   <a href="#home" class="logo">OLENA<span>AI</span></a>
-  <nav class="nav-links"><a href="#video">Відео</a><a href="#visuals">Візуали</a><a href="#cert">Кваліфікація</a><a href="#about">Про мене</a><a href="#services">Послуги</a></nav>
+  <nav class="nav-links"><a href="#video">Відео</a><a href="#brand">Бренд-фільми</a><a href="#stories">Історії</a><a href="#visuals">Візуали</a><a href="#cert">Кваліфікація</a><a href="#about">Про мене</a><a href="#services">Послуги</a></nav>
   <a href="#contact" class="nav-cta">Обговорити проєкт</a>
 </div></header>
 
@@ -186,6 +201,23 @@
   </div>
   <div class="vwide"><video src="assets/cinematic-9x16.mp4" muted loop playsinline preload="metadata"></video><div class="meta" style="padding-top:12px"><div class="tag">Cinematic · 9:16</div><h4 style="font-size:20px">Кінематографічний AI-проєкт</h4></div></div>
 </div></section>
+
+<section id="brand" class="brand-sec"><div class="wrap">
+  <div class="sec-head"><div class="eyebrow">Brand Films · Concept Campaign</div><h2>Luxury-реклама <span class="champ">для бренду</span></h2><p>ORLOVA — концептуальний бренд, створений від ідеї до фінального ролика: прикраси, парфуми й догляд за шкірою. Повний цикл: концепція, кадри, анімація, монтаж і фінальна плашка бренду.</p><span class="ratio-tag">9:16 · Full HD</span></div>
+  <div class="vid-grid three">
+    <div class="vcard"><video src="assets/orlova-jewelry-9x16.mp4" poster="assets/orlova-jewelry-9x16-poster.webp" muted loop playsinline preload="none"></video><div class="meta"><div class="tag">Jewelry · 9:16</div><h4>ORLOVA Fine Jewelry</h4><div class="case-note">Макро смарагду, руки ювеліра, прикраса на руці. Світло, що оживляє метал і камінь.</div></div></div>
+    <div class="vcard"><video src="assets/orlova-parfum-9x16.mp4" poster="assets/orlova-parfum-9x16-poster.webp" muted loop playsinline preload="none"></video><div class="meta"><div class="tag">Perfume · 9:16</div><h4>ORLOVA Parfum</h4><div class="case-note">Dark luxury: флакон із темряви, аромат на шкірі, пекшот із краплею по склу.</div></div></div>
+    <div class="vcard"><video src="assets/orlova-skin-9x16.mp4" poster="assets/orlova-skin-9x16-poster.webp" muted loop playsinline preload="none"></video><div class="meta"><div class="tag">Beauty · 9:16</div><h4>ORLOVA Skin</h4><div class="case-note">Текстура крему, вода й скло, сяйво шкіри — продаж через відчуття.</div></div></div>
+  </div>
+</div></section>
+
+<section id="stories" class="story-sec"><div class="wrap"><div class="story-grid">
+  <div><video src="assets/family-story-16x9.mp4" poster="assets/family-story-16x9-poster.webp" muted loop playsinline preload="none"></video></div>
+  <div class="story-text"><div class="eyebrow">Family Story · 16:9</div><h3>Ваша історія <span class="champ">оживає</span></h3>
+    <p>Старі фото пари, весілля й дитини перетворилися на 15-секундний фільм: кожен знімок спершу з'являється вицвілим, а потім оживає в кольорі й русі.</p>
+    <ul><li>Сценарій і відбір спогадів</li><li>AI-генерація та «оживлення» фото</li><li>Монтаж, переходи, Full HD</li><li>Подарунок на річницю, весілля, день народження</li></ul>
+  </div>
+</div></div></section>
 
 <section class="avatar-band"><div class="wrap">
   <div class="eyebrow" style="justify-content:center">AI Avatar</div>
@@ -293,6 +325,7 @@
     </div>`).join("");
   const reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   document.querySelectorAll("video").forEach(vid=>{const t=vid.parentElement;if(!reduce){t.addEventListener("mouseenter",()=>vid.play().catch(()=>{}));t.addEventListener("mouseleave",()=>{vid.pause();vid.currentTime=0;});}vid.addEventListener("click",()=>{vid.paused?vid.play():vid.pause();});});
+  if(!reduce&&window.matchMedia("(hover: none)").matches&&"IntersectionObserver" in window){const io=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting){v.preload="auto";v.play().catch(()=>{});}else v.pause();}),{threshold:.6});document.querySelectorAll("video").forEach(v=>io.observe(v));}
 </script>
 </body>
 </html>
