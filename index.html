@@ -3,8 +3,14 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Olena AI — AI Creator Portfolio</title>
-<meta name="description" content="Olena AI — портфоліо AI Creator: AI Video, реклама, AI-візуали, аватари, каруселі, сайти та digital-рішення." />
+<title>Olena Orlova — AI Creator · AI-відео для брендів</title>
+<meta name="description" content="Olena Orlova — AI Creator. Реклама, яка виглядає як кіно, без жодної зйомки: обличчя бренду, говорячі аватари, маскоти, кіноісторії, luxury-реклама." />
+<link rel="canonical" href="https://orlovaolena.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://orlovaolena.com/" />
+<meta property="og:title" content="Olena Orlova — AI Creator" />
+<meta property="og:description" content="Реклама, яка виглядає як кіно, без жодної зйомки. AI-відео для брендів і експертів." />
+<meta property="og:image" content="https://orlovaolena.com/assets/orlova-jewelry-9x16-poster.webp" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -186,128 +192,210 @@
   .foot-inner a.up:hover{color:var(--champagne-2)}
   @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}
   :focus-visible{outline:2px solid var(--champagne-2);outline-offset:3px}
+  .nav-right{display:flex;align-items:center;gap:14px}
+  .lang{display:flex;gap:2px}
+  .lang button{background:transparent;border:0;border-bottom:1px solid transparent;color:var(--muted);font:600 11.5px 'Manrope',sans-serif;letter-spacing:.14em;min-width:34px;min-height:34px;cursor:pointer;transition:color .2s}
+  .lang button:hover{color:var(--pearl)}
+  .lang button.on{color:var(--champagne-2);border-bottom-color:var(--champagne-2)}
+  @media(max-width:520px){.nav-cta{display:none}.lang button{min-width:30px}}
+  .facts{display:flex;flex-wrap:wrap;gap:22px 36px;margin-top:40px;padding-top:26px;border-top:1px solid var(--hair)}
+  .facts div{display:flex;flex-direction:column;gap:2px}
+  .facts b{font-family:'Fraunces',serif;font-weight:400;font-size:28px;color:var(--champagne-2)}
+  .facts span{font-size:13px;color:var(--muted);max-width:22ch}
+  .fmt-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:30px 24px}
+  .fmt{display:flex;flex-direction:column;gap:14px}
+  .fmt .fv{position:relative}
+  .fmt video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:12px;border:1px solid var(--hair-strong);background:#000;cursor:zoom-in;display:block}
+  .fmt .fn{position:absolute;top:12px;left:14px;font-family:'Fraunces',serif;font-size:22px;color:var(--champagne-1);text-shadow:0 2px 10px rgba(0,0,0,.6);pointer-events:none}
+  .fmt h3{font-size:26px;font-weight:400}
+  .fmt p{font-size:14.5px;color:var(--muted);line-height:1.55;border-top:1px solid var(--hair);padding-top:10px}
+  .fmt .lbl{display:block;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--champagne-2);margin-bottom:2px;font-weight:600}
+  .fmt em{font-family:'Fraunces',serif;color:var(--champagne-3);font-size:16px}
+  .about-photo.arch{border:0;overflow:visible;display:flex;flex-direction:column;align-items:center;gap:16px}
+  .about-photo.arch img{width:100%;max-width:380px;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;border-radius:200px 200px 14px 14px;border:1px solid var(--hair-strong);padding:10px;background:var(--glass)}
+  .about-photo .ps{font-family:'Fraunces',serif;font-style:italic;color:var(--champagne-2);font-size:17px;text-align:center;max-width:32ch}
+  .points{list-style:none;margin:10px 0 24px}
+  .points li{padding:14px 0 14px 30px;border-top:1px solid var(--hair);position:relative;font-size:16px}
+  .points li::before{content:"✦";position:absolute;left:0;color:var(--champagne-2)}
+  .plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;align-items:stretch}
+  .plan{position:relative;background:var(--panel);border:1px solid var(--hair);border-radius:14px;padding:34px 28px;display:flex;flex-direction:column;gap:14px}
+  .plan.featured{border-color:var(--champagne-3);background:linear-gradient(180deg,rgba(216,198,164,.08),var(--panel))}
+  .plan .pop{position:absolute;top:-12px;left:26px;background:linear-gradient(105deg,var(--champagne-1),var(--champagne-3));color:#1a1508;font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:4px 12px;border-radius:100px}
+  .plan h3{font-size:30px;font-weight:400}
+  .plan>p{color:var(--muted);font-size:15px}
+  .plan .price{font-family:'Fraunces',serif;font-size:22px;color:var(--champagne-2);padding:14px 0;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
+  .plan ul{list-style:none;flex:1;display:flex;flex-direction:column;gap:10px;font-size:15px}
+  .plan li::before{content:"— ";color:var(--champagne-2)}
+  .plan .btn{text-align:center}
+  .faq-wrap{max-width:860px}
+  .faq-wrap details{border-top:1px solid var(--hair);padding:20px 0}
+  .faq-wrap details:last-child{border-bottom:1px solid var(--hair)}
+  .faq-wrap summary{cursor:pointer;list-style:none;font-family:'Fraunces',serif;font-size:21px;display:flex;justify-content:space-between;gap:20px}
+  .faq-wrap summary::-webkit-details-marker{display:none}
+  .faq-wrap summary::after{content:"+";color:var(--champagne-2);font-size:24px;line-height:1}
+  .faq-wrap details[open] summary::after{content:"−"}
+  .faq-wrap details p{color:var(--muted);margin-top:12px;font-size:15.5px;max-width:70ch}
 </style>
 </head>
 <body>
 <a id="home"></a>
 <header class="nav"><div class="wrap nav-inner">
   <a href="#home" class="logo">OLENA<span>AI</span></a>
-  <nav class="nav-links"><a href="#video">Відео</a><a href="#brand">Бренд-фільми</a><a href="#stories">Історії</a><a href="#visuals">Візуали</a><a href="#cert">Кваліфікація</a><a href="#about">Про мене</a><a href="#services">Послуги</a></nav>
-  <a href="#contact" class="nav-cta">Обговорити проєкт</a>
+  <nav class="nav-links"><a href="#formats" data-i18n="nav_formats">Формати</a><a href="#video" data-i18n="nav_video">Відео</a><a href="#brand" data-i18n="nav_brand">Бренд-фільми</a><a href="#visuals" data-i18n="nav_visuals">Візуали</a><a href="#about" data-i18n="nav_about">Про мене</a><a href="#packages" data-i18n="nav_packages">Пакети</a><a href="#faq">FAQ</a></nav>
+  <div class="nav-right">
+    <div class="lang" role="group" aria-label="Language"><button type="button" data-lang="ua">UA</button><button type="button" data-lang="ru">RU</button><button type="button" data-lang="de">DE</button><button type="button" data-lang="en">EN</button></div>
+    <a href="#contact" class="nav-cta" data-i18n="nav_cta">Обговорити відео</a>
+  </div>
 </div></header>
 
 <section class="hero"><div class="wrap hero-grid">
   <div>
-  <div class="hero-tag">AI CREATOR · VIDEO · DIGITAL SOLUTIONS</div>
-  <h1>AI-контент, який <span class="champ">працює на бренд</span></h1>
-  <p class="lead">Рекламні AI-ролики, Reels, product visuals, каруселі, AI-аватари, сайти, landing pages та digital-рішення.</p>
-  <div class="hero-btns"><a href="#brand" class="btn btn-primary">Дивитися роботи</a><a href="#contact" class="btn btn-ghost">Обговорити проєкт</a></div>
+  <div class="hero-tag" data-i18n="hero_tag">AI-ВІДЕО ДЛЯ БРЕНДІВ І ЕКСПЕРТІВ</div>
+  <h1 data-i18n="hero_h1">Реклама, <span class="champ">яка виглядає як кіно,</span> без жодної зйомки</h1>
+  <p class="lead" data-i18n="hero_lead">Створюю обличчя бренду, говорячих аватарів, маскотів і кінематографічні історії за допомогою штучного інтелекту. Без камери, акторів і студії — лише контент, який зупиняє стрічку.</p>
+  <div class="hero-btns"><a href="#contact" class="btn btn-primary" data-i18n="hero_cta">Обговорити моє відео</a><a href="#formats" class="btn btn-ghost" data-i18n="hero_cta2">Дивитися роботи</a></div>
+  <div class="facts">
+    <div><b data-i18n="f1b">20 років</b><span data-i18n="f1s">у торгівлі — знаю, що продає</span></div>
+    <div><b>9:16</b><span>Reels, TikTok, Shorts</span></div>
+    <div><b data-i18n="f3b">30+ мов</b><span data-i18n="f3s">для озвучки ваших відео</span></div>
   </div>
-  <div class="hero-reel"><video class="no-lightbox" src="assets/showreel-9x16.mp4" poster="assets/showreel-9x16-poster.webp" autoplay muted loop playsinline preload="auto" aria-label="Шоурил робіт"></video><span class="reel-tag">Showreel · 2026</span></div>
+  </div>
+  <div class="hero-reel"><video class="no-lightbox" src="assets/showreel-9x16.mp4" poster="assets/showreel-9x16-poster.webp" autoplay muted loop playsinline preload="auto" aria-label="Showreel"></video><span class="reel-tag">Showreel · 2026</span></div>
 </div></section>
 
-<section id="video" class="vid-sec"><div class="wrap">
-  <div class="sec-head"><div class="eyebrow">Video Portfolio</div><h2>AI Video &amp; <span class="champ">Reels</span></h2><p>Рекламні ролики, Reels і короткі AI-фільми у вертикальному форматі 9:16. Натисніть на ролик, щоб подивитися на весь екран.</p><span class="ratio-tag">9:16</span></div>
+<section id="formats" class="vid-sec"><div class="wrap">
+  <div class="sec-head"><div class="eyebrow" data-i18n="fm_kicker">Що я створюю</div><h2 data-i18n="fm_title">Чотири формати, які <span class="champ">працюють на продажі</span></h2><p data-i18n="fm_sub">Кожна робота — реальний приклад. Таке саме створю для вашого бренду.</p></div>
+  <div class="fmt-grid">
+    <article class="fmt"><div class="fv"><video src="assets/vera.mp4" poster="assets/vera-poster.webp" muted loop playsinline preload="none"></video><span class="fn">01</span></div><h3 data-i18n="s1t">Обличчя бренду</h3><p><span class="lbl" data-i18n="lbl_task">Задача</span><span data-i18n="s1task">впізнавана героїня для контенту без дорогих і довгих фотосесій.</span></p><p><span class="lbl" data-i18n="lbl_sol">Рішення</span><span data-i18n="s1sol">AI-персонаж Віра — одна людина в будь-якій локації та образі, 11 сцен.</span></p><em data-i18n="s1for">— для експертів і брендів</em></article>
+    <article class="fmt"><div class="fv"><video src="assets/talking-avatar.mp4" poster="assets/talking-avatar-poster.webp" muted loop playsinline preload="none"></video><span class="fn">02</span></div><h3 data-i18n="s2t">Говорячий аватар</h3><p><span class="lbl" data-i18n="lbl_task">Задача</span><span data-i18n="s2task">щодня виходити в Reels без камери і зйомок.</span></p><p><span class="lbl" data-i18n="lbl_sol">Рішення</span><span data-i18n="s2sol">реалістичний аватар з живою мімікою та субтитрами у ваших кольорах.</span></p><em data-i18n="s2for">— для експертів і шкіл</em></article>
+    <article class="fmt"><div class="fv"><video src="assets/mascot-series.mp4" poster="assets/mascot-series-poster.webp" muted loop playsinline preload="none"></video><span class="fn">03</span></div><h3 data-i18n="s3t">Маскот і мультсеріал</h3><p><span class="lbl" data-i18n="lbl_task">Задача</span><span data-i18n="s3task">щоб бренд запам'ятовували і чекали нових серій.</span></p><p><span class="lbl" data-i18n="lbl_sol">Рішення</span><span data-i18n="s3sol">власний персонаж-маскот і короткі серії з гумором.</span></p><em data-i18n="s3for">— для магазинів і застосунків</em></article>
+    <article class="fmt"><div class="fv"><video src="assets/three-knocks.mp4" poster="assets/three-knocks-poster.webp" muted loop playsinline preload="none"></video><span class="fn">04</span></div><h3 data-i18n="s4t">Кіноісторія</h3><p><span class="lbl" data-i18n="lbl_task">Задача</span><span data-i18n="s4task">зачепити емоцією, а не просто показати продукт.</span></p><p><span class="lbl" data-i18n="lbl_sol">Рішення</span><span data-i18n="s4sol">коротке кіно з драматургією: «Три стуки» — історія надії за 25 секунд.</span></p><em data-i18n="s4for">— для імідж- і соціальних кампаній</em></article>
+  </div>
+</div></section>
+
+<section id="video"><div class="wrap">
+  <div class="sec-head"><div class="eyebrow" data-i18n="v_kicker">Шоурил · Reels</div><h2 data-i18n="v_title">Ще кілька <span class="champ">історій</span></h2><p data-i18n="v_sub">Трилер, фентезі, гумор, трансформація, реклама. Натисніть на ролик, щоб подивитися на весь екран.</p><span class="ratio-tag">9:16</span></div>
   <div class="vid-grid">
-    <div class="vcard"><video src="assets/video-03.mp4" poster="assets/video-03-poster.webp" muted loop playsinline preload="metadata"></video><div class="meta"><div class="tag">AI Advertising · 9:16</div><h4>Кінематографічна реклама</h4><div class="cap">Concept · generation · edit</div></div></div>
-    <div class="vcard"><video src="assets/video-04.mp4" poster="assets/video-04-poster.webp" muted loop playsinline preload="metadata"></video><div class="meta"><div class="tag">AI Story · 9:16</div><h4>Візуальна історія</h4><div class="cap">Storytelling · atmosphere</div></div></div>
-    <div class="vcard"><video src="assets/video-05.mp4" poster="assets/video-05-poster.webp" muted loop playsinline preload="metadata"></video><div class="meta"><div class="tag">Social · 9:16</div><h4>Reels &amp; Social</h4><div class="cap">Hook · visual direction</div></div></div>
-    <div class="vcard"><video src="assets/video-06.mp4" poster="assets/video-06-poster.webp" muted loop playsinline preload="metadata"></video><div class="meta"><div class="tag">Cinematic · 9:16</div><h4>AI cinematic short</h4><div class="cap">Scenes · rhythm · sound</div></div></div>
-    <div class="vcard"><video src="assets/cinematic-9x16.mp4" poster="assets/cinematic-9x16-poster.webp" muted loop playsinline preload="metadata"></video><div class="meta"><div class="tag">Short Film · 9:16 · 58 с</div><h4>Кінематографічний AI-фільм</h4><div class="cap">Story · emotion · cinematography</div></div></div>
+    <div class="vcard"><video src="assets/thriller.mp4" poster="assets/thriller-poster.webp" muted loop playsinline preload="none"></video><div class="meta"><div class="tag">Thriller · 9:16</div><h4 data-i18n="r1">Не озирайся</h4></div></div>
+    <div class="vcard"><video src="assets/fantasy-friend.mp4" poster="assets/fantasy-friend-poster.webp" muted loop playsinline preload="none"></video><div class="meta"><div class="tag">Fantasy · 9:16</div><h4 data-i18n="r2">Маленький друг</h4></div></div>
+    <div class="vcard"><video src="assets/new-year-heroes.mp4" poster="assets/new-year-heroes-poster.webp" muted loop playsinline preload="none"></video><div class="meta"><div class="tag">Humor · 9:16</div><h4 data-i18n="r3">Новорічні герої</h4></div></div>
+    <div class="vcard"><video src="assets/steps.mp4" poster="assets/steps-poster.webp" muted loop playsinline preload="none"></video><div class="meta"><div class="tag">Transformation · 9:16</div><h4 data-i18n="r4">Сходинки</h4></div></div>
+    <div class="vcard"><video src="assets/cinematic-9x16.mp4" poster="assets/cinematic-9x16-poster.webp" muted loop playsinline preload="none"></video><div class="meta"><div class="tag">Short Film · 58 s</div><h4 data-i18n="r5">Кінематографічний AI-фільм</h4></div></div>
+    <div class="vcard"><video src="assets/video-03.mp4" poster="assets/video-03-poster.webp" muted loop playsinline preload="none"></video><div class="meta"><div class="tag">AI Advertising · 9:16</div><h4 data-i18n="r6">Кінематографічна реклама</h4></div></div>
+    <div class="vcard"><video src="assets/video-04.mp4" poster="assets/video-04-poster.webp" muted loop playsinline preload="none"></video><div class="meta"><div class="tag">AI Story · 9:16</div><h4 data-i18n="r7">Візуальна історія</h4></div></div>
+    <div class="vcard"><video src="assets/video-05.mp4" poster="assets/video-05-poster.webp" muted loop playsinline preload="none"></video><div class="meta"><div class="tag">Social · 9:16</div><h4>Reels &amp; Social</h4></div></div>
+    <div class="vcard"><video src="assets/video-06.mp4" poster="assets/video-06-poster.webp" muted loop playsinline preload="none"></video><div class="meta"><div class="tag">Cinematic · 9:16</div><h4>AI cinematic short</h4></div></div>
   </div>
 </div></section>
 
 <section id="brand" class="brand-sec"><div class="wrap">
-  <div class="sec-head"><div class="eyebrow">Brand Films · Concept Campaign</div><h2>Luxury-реклама <span class="champ">для бренду</span></h2><p>ORLOVA — концептуальний бренд, створений від ідеї до фінального ролика: прикраси, парфуми й догляд за шкірою. Повний цикл: концепція, кадри, анімація, монтаж і фінальна плашка бренду.</p><span class="ratio-tag">9:16 · Full HD</span></div>
+  <div class="sec-head"><div class="eyebrow">Brand Films · Concept Campaign</div><h2 data-i18n="b_title">Luxury-реклама <span class="champ">для бренду</span></h2><p data-i18n="b_sub">ORLOVA — концептуальний бренд, створений від ідеї до фінального ролика: прикраси, парфуми й догляд за шкірою. Повний цикл: концепція, кадри, анімація, монтаж і фінальна плашка бренду.</p><span class="ratio-tag">9:16 · Full HD</span></div>
   <div class="vid-grid three">
-    <div class="vcard"><video src="assets/orlova-jewelry-9x16.mp4" poster="assets/orlova-jewelry-9x16-poster.webp" muted loop playsinline preload="none"></video><div class="meta"><div class="tag">Jewelry · 9:16</div><h4>ORLOVA Fine Jewelry</h4><div class="case-note">Макро смарагду, руки ювеліра, прикраса на руці. Світло, що оживляє метал і камінь.</div></div></div>
-    <div class="vcard"><video src="assets/orlova-parfum-9x16.mp4" poster="assets/orlova-parfum-9x16-poster.webp" muted loop playsinline preload="none"></video><div class="meta"><div class="tag">Perfume · 9:16</div><h4>ORLOVA Parfum</h4><div class="case-note">Dark luxury: флакон із темряви, аромат на шкірі, пекшот із краплею по склу.</div></div></div>
-    <div class="vcard"><video src="assets/orlova-skin-9x16.mp4" poster="assets/orlova-skin-9x16-poster.webp" muted loop playsinline preload="none"></video><div class="meta"><div class="tag">Beauty · 9:16</div><h4>ORLOVA Skin</h4><div class="case-note">Текстура крему, вода й скло, сяйво шкіри — продаж через відчуття.</div></div></div>
+    <div class="vcard"><video src="assets/orlova-jewelry-9x16.mp4" poster="assets/orlova-jewelry-9x16-poster.webp" muted loop playsinline preload="none"></video><div class="meta"><div class="tag">Jewelry · 9:16</div><h4>ORLOVA Fine Jewelry</h4><div class="case-note" data-i18n="b1">Макро смарагду, руки ювеліра, прикраса на руці. Світло, що оживляє метал і камінь.</div></div></div>
+    <div class="vcard"><video src="assets/orlova-parfum-9x16.mp4" poster="assets/orlova-parfum-9x16-poster.webp" muted loop playsinline preload="none"></video><div class="meta"><div class="tag">Perfume · 9:16</div><h4>ORLOVA Parfum</h4><div class="case-note" data-i18n="b2">Dark luxury: флакон із темряви, аромат на шкірі, пекшот із краплею по склу.</div></div></div>
+    <div class="vcard"><video src="assets/orlova-skin-9x16.mp4" poster="assets/orlova-skin-9x16-poster.webp" muted loop playsinline preload="none"></video><div class="meta"><div class="tag">Beauty · 9:16</div><h4>ORLOVA Skin</h4><div class="case-note" data-i18n="b3">Текстура крему, вода й скло, сяйво шкіри — продаж через відчуття.</div></div></div>
   </div>
 </div></section>
 
 <section id="stories" class="story-sec"><div class="wrap"><div class="story-grid">
   <div><video src="assets/family-story-16x9.mp4" poster="assets/family-story-16x9-poster.webp" muted loop playsinline preload="none"></video></div>
-  <div class="story-text"><div class="eyebrow">Family Story · 16:9</div><h3>Ваша історія <span class="champ">оживає</span></h3>
-    <p>Старі фото пари, весілля й дитини перетворилися на 15-секундний фільм: кожен знімок спершу з'являється вицвілим, а потім оживає в кольорі й русі.</p>
-    <ul><li>Сценарій і відбір спогадів</li><li>AI-генерація та «оживлення» фото</li><li>Монтаж, переходи, Full HD</li><li>Подарунок на річницю, весілля, день народження</li></ul>
+  <div class="story-text"><div class="eyebrow">Family Story · 16:9</div><h3 data-i18n="st_title">Ваша історія <span class="champ">оживає</span></h3>
+    <p data-i18n="st_text">Старі фото пари, весілля й дитини перетворилися на 15-секундний фільм: кожен знімок спершу з'являється вицвілим, а потім оживає в кольорі й русі.</p>
+    <ul data-i18n="st_list"><li>Сценарій і відбір спогадів</li><li>AI-генерація та «оживлення» фото</li><li>Монтаж, переходи, Full HD</li><li>Подарунок на річницю, весілля, день народження</li></ul>
   </div>
 </div></div></section>
 
 <section class="avatar-band"><div class="wrap">
   <div class="eyebrow" style="justify-content:center">AI Avatar</div>
-  <h2>Ваш бренд може <span class="champ">говорити сам</span></h2>
-  <p style="color:var(--muted);max-width:46ch;margin:0 auto">AI-аватар для презентації продуктів, послуг, експертного та рекламного контенту.</p>
+  <h2 data-i18n="av_title">Ваш бренд може <span class="champ">говорити сам</span></h2>
+  <p style="color:var(--muted);max-width:46ch;margin:0 auto" data-i18n="av_sub">AI-аватар для презентації продуктів, послуг, експертного та рекламного контенту.</p>
   <div class="avatar-chips"><span>Avatar</span><span>Voice</span><span>Script</span><span>Visuals</span><span>Editing</span></div>
-  <div class="avatar-vid"><video src="assets/video-01.mp4" poster="assets/video-01-poster.webp" muted loop playsinline preload="metadata"></video><div class="cap">AI Avatar · презентація бренду · 9:16</div></div>
+  <div class="avatar-vid"><video src="assets/video-01.mp4" poster="assets/video-01-poster.webp" muted loop playsinline preload="none"></video><div class="cap">AI Avatar · 9:16</div></div>
 </div></section>
 
 <section class="ba-sec"><div class="wrap">
-  <div class="sec-head"><div class="eyebrow">Before / After</div><h2>До / <span class="champ">Після</span></h2><p>Окремі приклади трансформації — поруч, щоб результат було видно одразу.</p></div>
-  <div class="ba-block"><h4>AI-відновлення саду / scene recreation</h4><div class="ba-pair"><div class="frame"><span class="badge">ДО</span><img src="assets/img-26.webp" alt="Сад до" loading="lazy"></div><div class="frame"><span class="badge">ПІСЛЯ</span><img src="assets/img-27.webp" alt="Сад після" loading="lazy"></div></div></div>
-  <div class="ba-block"><h4>Реставрація старої фотографії</h4><div class="ba-pair"><div class="frame"><span class="badge">ДО</span><img src="assets/img-46.webp" alt="Фото до" loading="lazy"></div><div class="frame"><span class="badge">ПІСЛЯ</span><img src="assets/img-28.webp" alt="Фото після" loading="lazy"></div></div></div>
-  <div class="ba-block"><h4>Real Photo → AI Portrait</h4><div class="ba-pair"><div class="frame"><span class="badge">REAL</span><img src="assets/img-18.webp" alt="Реальне фото" loading="lazy"></div><div class="frame"><span class="badge">AI</span><img src="assets/img-17.webp" alt="AI portrait" loading="lazy"></div></div></div>
+  <div class="sec-head"><div class="eyebrow">Before / After</div><h2 data-i18n="ba_title">До / <span class="champ">Після</span></h2><p data-i18n="ba_sub">Окремі приклади трансформації — поруч, щоб результат було видно одразу.</p></div>
+  <div class="ba-block"><h4 data-i18n="ba1">AI-відновлення саду</h4><div class="ba-pair"><div class="frame"><span class="badge">BEFORE</span><img src="assets/img-26.webp" alt="" loading="lazy"></div><div class="frame"><span class="badge">AFTER</span><img src="assets/img-27.webp" alt="" loading="lazy"></div></div></div>
+  <div class="ba-block"><h4 data-i18n="ba2">Реставрація старої фотографії</h4><div class="ba-pair"><div class="frame"><span class="badge">BEFORE</span><img src="assets/img-46.webp" alt="" loading="lazy"></div><div class="frame"><span class="badge">AFTER</span><img src="assets/img-28.webp" alt="" loading="lazy"></div></div></div>
+  <div class="ba-block"><h4>Real Photo → AI Portrait</h4><div class="ba-pair"><div class="frame"><span class="badge">REAL</span><img src="assets/img-18.webp" alt="" loading="lazy"></div><div class="frame"><span class="badge">AI</span><img src="assets/img-17.webp" alt="" loading="lazy"></div></div></div>
 </div></section>
 
 <section><div class="wrap">
-  <div class="sec-head"><div class="eyebrow">Carousels · 4:5</div><h2>Social <span class="champ">Carousels</span></h2><p>Три різні стилі каруселей — перегортання прямо на сайті, формат 4:5.</p></div>
+  <div class="sec-head"><div class="eyebrow">Carousels · 4:5</div><h2>Social <span class="champ">Carousels</span></h2><p data-i18n="car_sub">Три різні стилі каруселей — перегортання прямо на сайті, формат 4:5.</p></div>
   <div class="car-wrap" id="carWrap"></div>
 </div></section>
 
 <section id="visuals"><div class="wrap">
-  <div class="sec-head"><div class="eyebrow">Visual Portfolio</div><h2>AI Visuals &amp; <span class="champ">Advertising</span></h2><p>Роботи згруповані за змістом і показані в природних пропорціях — вертикальні 4:5 / 9:16, квадратні 1:1 та горизонтальні 16:9 без обрізання.</p></div>
+  <div class="sec-head"><div class="eyebrow">Visual Portfolio</div><h2>AI Visuals &amp; <span class="champ">Advertising</span></h2><p data-i18n="vis_sub">Роботи згруповані за змістом і показані в природних пропорціях, без обрізання.</p></div>
   <div id="niches"></div>
 </div></section>
 
+<section id="about"><div class="wrap"><div class="about-grid">
+  <div class="about-photo arch"><img src="assets/olena-portrait.webp" alt="Olena Orlova" loading="lazy"><p class="ps" data-i18n="ab_ps">P.S. Це фото теж створене штучним інтелектом ✦</p></div>
+  <div class="about-text"><div class="eyebrow" data-i18n="ab_kicker">Про мене</div><h2 data-i18n="ab_title">Я Олена. Двадцять років у торгівлі — <span class="champ">тепер AI-кіно</span></h2>
+    <p data-i18n="ab_text">Я пройшла шлях від ринку до помічниці директора і двох власних інтернет-магазинів. Тому я створюю не просто красиві відео, а такі, після яких люди пишуть і купують.</p>
+    <ul class="points"><li data-i18n="ab_p1">Думаю як продавець, а не лише як дизайнер</li><li data-i18n="ab_p2">Показую тест до того, як ви платите за повне відео</li><li data-i18n="ab_p3">Пишу сценарій сама — від вас потрібна лише ідея</li></ul>
+    <div class="tools-strip"><span>VEO</span><span>KLING</span><span>FLOW</span><span>SEEDANCE</span><span>MIDJOURNEY</span><span>NANO BANANA</span><span>SUNO</span><span>ELEVENLABS</span></div>
+  </div>
+</div></div></section>
+
 <section id="cert" class="cert-sec"><div class="wrap"><div class="cert-grid">
-  <div class="cert-frame"><img src="assets/alpi-certificate.png" alt="Сертифікат ALPI — AI Creator, Olena Orlova"></div>
-  <div class="cert-info"><div class="badge-cert"><span class="tick"></span> Certified · ALPI</div><h2>Підтверджена <span class="champ">кваліфікація</span></h2><div class="course">AI Creator</div><p>Генерація фото, відео, музики та текстового контенту за допомогою базових і просунутих AI-інструментів.</p><div class="cert-meta"><div><div class="l">Дата</div><div class="v">14.08.2026</div></div><div><div class="l">ID</div><div class="v">106030-0011</div></div><div><div class="l">Обсяг</div><div class="v"><span class="ects">2,4 ECTS</span></div></div></div></div>
+  <div class="cert-frame"><img src="assets/alpi-certificate.png" alt="ALPI AI Creator — Olena Orlova" loading="lazy"></div>
+  <div class="cert-info"><div class="badge-cert"><span class="tick"></span> Certified · ALPI</div><h2 data-i18n="c_title">Підтверджена <span class="champ">кваліфікація</span></h2><div class="course">AI Creator</div><p data-i18n="c_text">Генерація фото, відео, музики та текстового контенту за допомогою базових і просунутих AI-інструментів.</p><div class="cert-meta"><div><div class="l" data-i18n="c_date">Дата</div><div class="v">14.08.2026</div></div><div><div class="l">ID</div><div class="v">106030-0011</div></div><div><div class="l" data-i18n="c_vol">Обсяг</div><div class="v"><span class="ects">2,4 ECTS</span></div></div></div></div>
 </div></div></section>
 
 <section id="services" class="serv-sec"><div class="wrap">
-  <div class="sec-head"><div class="eyebrow">What I Create</div><h2><span class="champ">Послуги</span></h2></div>
+  <div class="sec-head"><div class="eyebrow">What I Create</div><h2><span class="champ" data-i18n="sv_title">Послуги</span></h2></div>
   <div class="serv-grid">
-    <div class="serv"><div class="n">01</div><h4>AI-рекламні ролики</h4><p>Концепція, генерація, анімація, монтаж і музичний настрій.</p></div>
-    <div class="serv"><div class="n">02</div><h4>Reels &amp; Social Content</h4><p>Вертикальні відео 9:16 з хуком і рекламною подачею.</p></div>
-    <div class="serv"><div class="n">03</div><h4>AI Visuals</h4><p>Fashion, beauty, product, fantasy та surreal visuals.</p></div>
-    <div class="serv"><div class="n">04</div><h4>Carousels &amp; Social Design</h4><p>Каруселі, пости, stories та контент-серії.</p></div>
-    <div class="serv"><div class="n">05</div><h4>AI Avatars</h4><p>Цифрові ведучі для реклами, презентацій і контенту.</p></div>
-    <div class="serv"><div class="n">06</div><h4>Creative Direction</h4><p>Ідея, сценарій, структура та AI-інструменти під задачу.</p></div>
-    <div class="serv"><div class="n">07</div><h4>Website &amp; Landing Page</h4><p>Сайти й landing pages для брендів, послуг та продуктів.</p></div>
-    <div class="serv"><div class="n">08</div><h4>Chatbot Setup</h4><p>Instagram, Telegram та інші канали комунікації.</p></div>
-    <div class="serv"><div class="n">09</div><h4>AI Automation</h4><p>Базові автоматизації заявок, відповідей та збору контактів.</p></div>
+    <div class="serv"><div class="n">01</div><h4 data-i18n="sv1t">AI-рекламні ролики</h4><p data-i18n="sv1">Концепція, генерація, анімація, монтаж і музичний настрій.</p></div>
+    <div class="serv"><div class="n">02</div><h4>Reels &amp; Social Content</h4><p data-i18n="sv2">Вертикальні відео 9:16 з хуком і рекламною подачею.</p></div>
+    <div class="serv"><div class="n">03</div><h4>AI Visuals</h4><p data-i18n="sv3">Fashion, beauty, product, fantasy та surreal visuals.</p></div>
+    <div class="serv"><div class="n">04</div><h4>Carousels &amp; Social Design</h4><p data-i18n="sv4">Каруселі, пости, stories та контент-серії.</p></div>
+    <div class="serv"><div class="n">05</div><h4>AI Avatars</h4><p data-i18n="sv5">Цифрові ведучі для реклами, презентацій і контенту.</p></div>
+    <div class="serv"><div class="n">06</div><h4>Creative Direction</h4><p data-i18n="sv6">Ідея, сценарій, структура та AI-інструменти під задачу.</p></div>
+    <div class="serv"><div class="n">07</div><h4>Website &amp; Landing Page</h4><p data-i18n="sv7">Сайти й landing pages для брендів, послуг та продуктів.</p></div>
+    <div class="serv"><div class="n">08</div><h4>Chatbot Setup</h4><p data-i18n="sv8">Instagram, Telegram та інші канали комунікації.</p></div>
+    <div class="serv"><div class="n">09</div><h4>AI Automation</h4><p data-i18n="sv9">Базові автоматизації заявок, відповідей та збору контактів.</p></div>
   </div>
 </div></section>
 
-<section id="about"><div class="wrap"><div class="about-grid">
-  <div class="about-photo"><img src="assets/img-17.webp" alt="Олена — AI Creator" loading="lazy"><div class="yrs"><b>23</b><span>роки в бізнесі</span></div></div>
-  <div class="about-text"><div class="eyebrow">Про мене</div><h2>Я розумію ваш бізнес <span class="champ">зсередини</span></h2>
-    <p>Мій шлях — від продавця до власниці двох інтернет-магазинів на Prom і Rozetka.</p>
-    <p>Я точно знаю, як важко привернути увагу покупця і скільки часу забирає якісний контент. Саме тому для мене AI — не просто тренд, а інструмент, який пришвидшує процеси, допомагає продажам і повертає власникам бізнесу найцінніше — час.</p>
-    <p>Сьогодні я створюю креативну рекламу товарів у різних стилях і постійно досліджую межу між людською креативністю та машинною точністю.</p>
-    <div class="quote">«Ваша ідея + мій досвід + можливості AI = контент, що вирізняє»</div>
-    <div class="tools-strip"><span>VEO</span><span>KLING</span><span>FLOW</span><span>NANO BANANA</span><span>SUNO</span><span>DAVINCI</span><span>CAPTIONS</span><span>HEYGEN</span></div>
-  </div>
-</div></div></section>
-
 <section id="workflow" class="flow-sec"><div class="wrap">
-  <div class="sec-head"><div class="eyebrow">Як ми працюємо</div><h2>Від задуму <span class="champ">до готового контенту</span></h2></div>
+  <div class="sec-head"><div class="eyebrow" data-i18n="wf_kicker">Як ми працюємо</div><h2 data-i18n="wf_title">Від ідеї <span class="champ">до готового відео</span></h2></div>
   <div class="flow-grid">
-    <div class="flow-step"><div class="pn">01</div><h4>Знайомство</h4><p>Ви розповідаєте про продукт, аудиторію та задачу.</p></div>
-    <div class="flow-step"><div class="pn">02</div><h4>Концепція</h4><p>Я пропоную ідею, стиль і сценарій майбутнього контенту.</p></div>
-    <div class="flow-step"><div class="pn">03</div><h4>Створення</h4><p>Генерую, відбираю найкраще та збираю фінальний матеріал.</p></div>
-    <div class="flow-step"><div class="pn">04</div><h4>Результат</h4><p>Ви отримуєте готовий візуал або ролик для публікації.</p></div>
+    <div class="flow-step"><div class="pn">01</div><h4 data-i18n="w1t">Бриф</h4><p data-i18n="w1">Коротко розповідаєте про продукт, аудиторію і де буде відео.</p></div>
+    <div class="flow-step"><div class="pn">02</div><h4 data-i18n="w2t">Тест 15 секунд</h4><p data-i18n="w2">Затверджуєте героя, стиль і настрій до старту.</p></div>
+    <div class="flow-step"><div class="pn">03</div><h4 data-i18n="w3t">Повне відео</h4><p data-i18n="w3">Сценарій, генерація, монтаж, субтитри, музика.</p></div>
+    <div class="flow-step"><div class="pn">04</div><h4 data-i18n="w4t">Правки й файли</h4><p data-i18n="w4">2 раунди правок і готові файли без водяних знаків.</p></div>
   </div>
+</div></section>
+
+<section id="packages"><div class="wrap">
+  <div class="sec-head"><div class="eyebrow" data-i18n="pk_kicker">Пакети</div><h2 data-i18n="pk_title">Оберіть <span class="champ">формат співпраці</span></h2><p data-i18n="pk_sub">Ціна залежить від тривалості та складності. Точну суму назву після короткого брифу.</p></div>
+  <div class="plans">
+    <article class="plan"><h3 data-i18n="p1n">Старт</h3><p data-i18n="p1d">Один ролик для Reels</p><div class="price" data-i18n="price">Ціна — після брифу</div><ul><li data-i18n="p1a">до 15 секунд, 9:16</li><li data-i18n="p1b">один персонаж</li><li data-i18n="p1c">субтитри у ваших кольорах</li></ul><a href="#contact" class="btn btn-ghost" data-i18n="plan_cta">Обрати</a></article>
+    <article class="plan featured"><span class="pop" data-i18n="popular">Обирають найчастіше</span><h3 data-i18n="p2n">Серія</h3><p data-i18n="p2d">3–5 роликів з одним героєм</p><div class="price" data-i18n="price">Ціна — після брифу</div><ul><li data-i18n="p2a">сценарії для всієї серії</li><li data-i18n="p2b">стабільний персонаж</li><li data-i18n="p2c">озвучка будь-якою мовою</li></ul><a href="#contact" class="btn btn-primary" data-i18n="plan_cta">Обрати</a></article>
+    <article class="plan"><h3 data-i18n="p3n">Обличчя бренду</h3><p data-i18n="p3d">Ваш власний AI-персонаж</p><div class="price" data-i18n="price">Ціна — після брифу</div><ul><li data-i18n="p3a">розробка героя під бренд</li><li data-i18n="p3b">фото і відео в різних сценах</li><li data-i18n="p3c">контент на місяць</li></ul><a href="#contact" class="btn btn-ghost" data-i18n="plan_cta">Обрати</a></article>
+  </div>
+</div></section>
+
+<section id="faq" class="flow-sec"><div class="wrap faq-wrap">
+  <div class="sec-head"><div class="eyebrow">FAQ</div><h2 data-i18n="faq_title">Часті <span class="champ">питання</span></h2></div>
+  <details><summary data-i18n="q1">Чи можна використовувати відео в рекламі?</summary><p data-i18n="a1">Так. Ви отримуєте готові файли без водяних знаків для соцмереж і реклами.</p></details>
+  <details><summary data-i18n="q2">Що, як мені не сподобається?</summary><p data-i18n="a2">Тому ми починаємо з тесту на 15 секунд. Ви бачите героя і стиль до повного відео, а в ціну входять 2 раунди правок.</p></details>
+  <details><summary data-i18n="q3">Мені потрібно щось знімати?</summary><p data-i18n="a3">Ні. Достатньо короткого опису, логотипу і фото продукту, якщо він є.</p></details>
+  <details><summary data-i18n="q4">Скільки часу це займає?</summary><p data-i18n="a4">Залежить від формату й тривалості. Точний термін для тесту і повного відео погоджуємо на брифі.</p></details>
+  <details><summary data-i18n="q5">Якою мовою може бути озвучка?</summary><p data-i18n="a5">Майже будь-якою: AI-голоси озвучують десятками мов. Спілкуюся з вами українською або російською — у дзвінках і голосових, а німецькою або англійською — у письмовій переписці. Текст іншою мовою радимо перевірити носієві мови.</p></details>
+  <details><summary data-i18n="q6">Як відбувається оплата?</summary><p data-i18n="a6">Передоплата 50% перед стартом, решта — після затвердження відео.</p></details>
 </div></section>
 
 <section id="contact" class="contact"><div class="wrap">
-  <div class="eyebrow" style="justify-content:center">Let's Create</div>
-  <h2>Є ідея? <span class="champ">Перетворимо її на digital-проєкт.</span></h2>
-  <p>Розкажи про бренд, продукт або послугу — і підберемо формат під задачу.</p>
+  <div class="eyebrow" style="justify-content:center" data-i18n="ct_note">Перша консультація — безкоштовна</div>
+  <h2 data-i18n="ct_title">Розкажіть про свій бренд — <span class="champ">я покажу, яким він буде в кіно</span></h2>
+  <p data-i18n="ct_sub">Напишіть у зручний месенджер українською, російською, німецькою чи англійською. Відповідаю протягом дня.</p>
   <div class="contact-btns"><a href="https://t.me/orlovaolenaua" target="_blank" rel="noopener" class="btn btn-primary">Telegram</a><a href="https://www.instagram.com/olena.ai_creator/" target="_blank" rel="noopener" class="btn btn-ghost">Instagram</a><a href="mailto:orlova.olena.uk@gmail.com" class="btn btn-ghost">Email</a></div>
 </div></section>
 
-<footer><div class="wrap foot-inner"><a href="#home" class="logo">OLENA<span>AI</span></a><span class="fnote">© Olena · AI Creator · 2026</span><a href="#home" class="up">Наверх ↑</a></div></footer>
+<footer><div class="wrap foot-inner"><a href="#home" class="logo">OLENA<span>AI</span></a><span class="fnote">© 2026 Olena Orlova · AI Creator</span><a href="#home" class="up" data-i18n="up">Наверх ↑</a></div></footer>
 
 <script>
   const carousels=[
@@ -319,7 +407,7 @@
     <div class="carousel" data-ci="${ci}">
       <div class="chead"><h4>${c.title}</h4><span class="badge2">${c.badge}</span></div>
       <div class="car-view">${c.imgs.map((n,i)=>`<img class="${i===0?'active':''}" src="assets/${n}.webp" alt="${c.title} ${i+1}" loading="lazy">`).join("")}</div>
-      <div class="car-nav"><button data-dir="-1" aria-label="Назад">‹</button><div class="car-dots">${c.imgs.map((_,i)=>`<i class="${i===0?'on':''}"></i>`).join("")}</div><button data-dir="1" aria-label="Далі">›</button></div>
+      <div class="car-nav"><button data-dir="-1" aria-label="Back">‹</button><div class="car-dots">${c.imgs.map((_,i)=>`<i class="${i===0?'on':''}"></i>`).join("")}</div><button data-dir="1" aria-label="Next">›</button></div>
     </div>`).join("");
   document.querySelectorAll(".carousel").forEach(car=>{
     const imgs=[...car.querySelectorAll(".car-view img")],dots=[...car.querySelectorAll(".car-dots i")];let idx=0;
@@ -337,18 +425,95 @@
   ];
   document.getElementById("niches").innerHTML=niches.map(n=>`
     <div class="niche"><div class="nhead"><h3>${n.h}</h3><div class="nsub">${n.sub}</div><div class="nratio">${n.r}</div></div>
-    ${n.beauty?`<div class="beauty-row"><div class="frame"><img src="assets/${n.items[0][0]}.webp" alt="${n.items[0][1]}" loading="lazy"><div style="padding:10px 12px"><div class="tag">Beauty</div><div class="cap" style="margin:0">${n.items[0][1]}</div></div></div>${n.vids.map(v=>`<div><video src="assets/${v[0]}.mp4" poster="assets/${v[0]}-poster.webp" muted loop playsinline preload="metadata"></video><div class="cap">${v[1]}</div></div>`).join("")}</div>`:`<div class="mason">${n.items.map(it=>`<div class="item"><div class="frame"><img src="assets/${it[0]}.webp" alt="${it[1]}" loading="lazy"></div><div class="cap">${it[1]}</div></div>`).join("")}</div>`}
+    ${n.beauty?`<div class="beauty-row"><div class="frame"><img src="assets/${n.items[0][0]}.webp" alt="${n.items[0][1]}" loading="lazy"><div style="padding:10px 12px"><div class="tag">Beauty</div><div class="cap" style="margin:0">${n.items[0][1]}</div></div></div>${n.vids.map(v=>`<div><video src="assets/${v[0]}.mp4" poster="assets/${v[0]}-poster.webp" muted loop playsinline preload="none"></video><div class="cap">${v[1]}</div></div>`).join("")}</div>`:`<div class="mason">${n.items.map(it=>`<div class="item"><div class="frame"><img src="assets/${it[0]}.webp" alt="${it[1]}" loading="lazy"></div><div class="cap">${it[1]}</div></div>`).join("")}</div>`}
     </div>`).join("");
+
+  /* ---------- video: hover preview, fullscreen viewer, mobile autoplay ---------- */
   const reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   document.querySelectorAll("video:not(.no-lightbox)").forEach(vid=>{const t=vid.parentElement;if(!reduce){t.addEventListener("mouseenter",()=>vid.play().catch(()=>{}));t.addEventListener("mouseleave",()=>{vid.pause();vid.currentTime=0;});}});
   const lb=document.createElement("div");lb.className="lb";lb.setAttribute("role","dialog");lb.setAttribute("aria-modal","true");
-  lb.innerHTML='<button class="lb-close" aria-label="Закрити">×</button><video controls playsinline></video>';document.body.appendChild(lb);
+  lb.innerHTML='<button class="lb-close" aria-label="Close">×</button><video controls playsinline></video>';document.body.appendChild(lb);
   const lbv=lb.querySelector("video");
   const closeLb=()=>{lbv.pause();lbv.removeAttribute("src");lbv.load();lb.classList.remove("open");document.body.style.overflow="";};
   lb.addEventListener("click",e=>{if(e.target===lb||e.target.classList.contains("lb-close"))closeLb();});
   document.addEventListener("keydown",e=>{if(e.key==="Escape"&&lb.classList.contains("open"))closeLb();});
   document.querySelectorAll("video:not(.no-lightbox)").forEach(v=>{if(v.closest(".lb"))return;v.addEventListener("click",()=>{v.pause();lbv.src=v.currentSrc||v.src;lbv.poster=v.poster||"";lb.classList.add("open");document.body.style.overflow="hidden";lbv.play().catch(()=>{});});});
   if(!reduce&&window.matchMedia("(hover: none)").matches&&"IntersectionObserver" in window){const io=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting){v.preload="auto";v.play().catch(()=>{});}else v.pause();}),{threshold:.6});document.querySelectorAll("video").forEach(v=>io.observe(v));}
+
+  /* ---------- languages: UA (text in the page) / RU / DE / EN ---------- */
+  const I18N={
+  ru:{nav_formats:"Форматы",nav_video:"Видео",nav_brand:"Бренд-фильмы",nav_visuals:"Визуалы",nav_about:"Обо мне",nav_packages:"Пакеты",nav_cta:"Обсудить видео",
+    hero_tag:"AI-ВИДЕО ДЛЯ БРЕНДОВ И ЭКСПЕРТОВ",hero_h1:'Реклама, <span class="champ">которая выглядит как кино,</span> без единой съёмки',hero_lead:"Создаю лицо бренда, говорящих аватаров, маскотов и кинематографичные истории с помощью искусственного интеллекта. Без камеры, актёров и студии — только контент, который останавливает ленту.",hero_cta:"Обсудить моё видео",hero_cta2:"Смотреть работы",f1b:"20 лет",f1s:"в торговле — знаю, что продаёт",f3b:"30+ языков",f3s:"для озвучки ваших видео",
+    fm_kicker:"Что я создаю",fm_title:'Четыре формата, которые <span class="champ">работают на продажи</span>',fm_sub:"Каждая работа — реальный пример. Такое же создам для вашего бренда.",lbl_task:"Задача",lbl_sol:"Решение",
+    s1t:"Лицо бренда",s1task:"узнаваемая героиня для контента без дорогих и долгих фотосессий.",s1sol:"AI-персонаж Вера — один человек в любой локации и образе, 11 сцен.",s1for:"— для экспертов и брендов",
+    s2t:"Говорящий аватар",s2task:"каждый день выходить в Reels без камеры и съёмок.",s2sol:"реалистичный аватар с живой мимикой и субтитрами в ваших цветах.",s2for:"— для экспертов и школ",
+    s3t:"Маскот и мультсериал",s3task:"чтобы бренд запоминали и ждали новых серий.",s3sol:"собственный персонаж-маскот и короткие серии с юмором.",s3for:"— для магазинов и приложений",
+    s4t:"Киноистория",s4task:"зацепить эмоцией, а не просто показать продукт.",s4sol:"короткое кино с драматургией: «Три стука» — история надежды за 25 секунд.",s4for:"— для имидж- и социальных кампаний",
+    v_kicker:"Шоурил · Reels",v_title:'Ещё несколько <span class="champ">историй</span>',v_sub:"Триллер, фэнтези, юмор, трансформация, реклама. Нажмите на ролик, чтобы посмотреть на весь экран.",r1:"Не оглядывайся",r2:"Маленький друг",r3:"Новогодние герои",r4:"Ступени",r5:"Кинематографичный AI-фильм",r6:"Кинематографичная реклама",r7:"Визуальная история",
+    b_title:'Luxury-реклама <span class="champ">для бренда</span>',b_sub:"ORLOVA — концептуальный бренд, созданный от идеи до финального ролика: украшения, парфюм и уход за кожей. Полный цикл: концепция, кадры, анимация, монтаж и финальная плашка бренда.",b1:"Макро изумруда, руки ювелира, украшение на руке. Свет, который оживляет металл и камень.",b2:"Dark luxury: флакон из темноты, аромат на коже, пэкшот с каплей по стеклу.",b3:"Текстура крема, вода и стекло, сияние кожи — продажа через ощущения.",
+    st_title:'Ваша история <span class="champ">оживает</span>',st_text:"Старые фото пары, свадьбы и ребёнка превратились в 15-секундный фильм: каждый снимок сначала появляется выцветшим, а потом оживает в цвете и движении.",st_list:"<li>Сценарий и отбор воспоминаний</li><li>AI-генерация и «оживление» фото</li><li>Монтаж, переходы, Full HD</li><li>Подарок на годовщину, свадьбу, день рождения</li>",
+    av_title:'Ваш бренд может <span class="champ">говорить сам</span>',av_sub:"AI-аватар для презентации продуктов, услуг, экспертного и рекламного контента.",
+    ba_title:'До / <span class="champ">После</span>',ba_sub:"Примеры трансформации рядом — чтобы результат был виден сразу.",ba1:"AI-восстановление сада",ba2:"Реставрация старой фотографии",car_sub:"Три разных стиля каруселей — листайте прямо на сайте, формат 4:5.",vis_sub:"Работы сгруппированы по темам и показаны в естественных пропорциях, без обрезки.",
+    ab_ps:"P.S. Это фото тоже создано искусственным интеллектом ✦",ab_kicker:"Обо мне",ab_title:'Я Елена. Двадцать лет в торговле — <span class="champ">теперь AI-кино</span>',ab_text:"Я прошла путь от рынка до помощницы директора и двух собственных интернет-магазинов. Поэтому я создаю не просто красивые видео, а такие, после которых люди пишут и покупают.",ab_p1:"Думаю как продавец, а не только как дизайнер",ab_p2:"Показываю тест до того, как вы платите за полное видео",ab_p3:"Пишу сценарий сама — от вас нужна только идея",
+    c_title:'Подтверждённая <span class="champ">квалификация</span>',c_text:"Генерация фото, видео, музыки и текстового контента с помощью базовых и продвинутых AI-инструментов.",c_date:"Дата",c_vol:"Объём",
+    sv_title:"Услуги",sv1t:"AI-рекламные ролики",sv1:"Концепция, генерация, анимация, монтаж и музыкальное настроение.",sv2:"Вертикальные видео 9:16 с хуком и рекламной подачей.",sv3:"Fashion, beauty, product, fantasy и surreal visuals.",sv4:"Карусели, посты, stories и контент-серии.",sv5:"Цифровые ведущие для рекламы, презентаций и контента.",sv6:"Идея, сценарий, структура и AI-инструменты под задачу.",sv7:"Сайты и landing pages для брендов, услуг и продуктов.",sv8:"Instagram, Telegram и другие каналы коммуникации.",sv9:"Базовые автоматизации заявок, ответов и сбора контактов.",
+    wf_kicker:"Как мы работаем",wf_title:'От идеи <span class="champ">до готового видео</span>',w1t:"Бриф",w1:"Коротко рассказываете о продукте, аудитории и где будет видео.",w2t:"Тест 15 секунд",w2:"Утверждаете героя, стиль и настроение до старта.",w3t:"Полное видео",w3:"Сценарий, генерация, монтаж, субтитры, музыка.",w4t:"Правки и файлы",w4:"2 раунда правок и готовые файлы без водяных знаков.",
+    pk_kicker:"Пакеты",pk_title:'Выберите <span class="champ">формат сотрудничества</span>',pk_sub:"Цена зависит от длительности и сложности. Точную сумму назову после короткого брифа.",price:"Цена — после брифа",popular:"Выбирают чаще всего",plan_cta:"Выбрать",p1n:"Старт",p1d:"Один ролик для Reels",p1a:"до 15 секунд, 9:16",p1b:"один персонаж",p1c:"субтитры в ваших цветах",p2n:"Серия",p2d:"3–5 роликов с одним героем",p2a:"сценарии для всей серии",p2b:"стабильный персонаж",p2c:"озвучка на любом языке",p3n:"Лицо бренда",p3d:"Ваш собственный AI-персонаж",p3a:"разработка героя под бренд",p3b:"фото и видео в разных сценах",p3c:"контент на месяц",
+    faq_title:'Частые <span class="champ">вопросы</span>',q1:"Можно ли использовать видео в рекламе?",a1:"Да. Вы получаете готовые файлы без водяных знаков для соцсетей и рекламы.",q2:"А если мне не понравится?",a2:"Поэтому мы начинаем с теста на 15 секунд. Вы видите героя и стиль до полного видео, а в цену входят 2 раунда правок.",q3:"Мне нужно что-то снимать?",a3:"Нет. Достаточно короткого описания, логотипа и фото продукта, если он есть.",q4:"Сколько это занимает времени?",a4:"Зависит от формата и длительности. Точный срок для теста и полного видео согласуем на брифе.",q5:"На каком языке может быть озвучка?",a5:"Почти на любом: AI-голоса озвучивают на десятках языков. Общаюсь с вами на украинском или русском — в звонках и голосовых, а на немецком или английском — в письменной переписке. Текст на другом языке советуем проверить носителю.",q6:"Как происходит оплата?",a6:"Предоплата 50% перед стартом, остальное — после утверждения видео.",
+    ct_note:"Первая консультация — бесплатно",ct_title:'Расскажите о своём бренде — <span class="champ">я покажу, каким он будет в кино</span>',ct_sub:"Напишите в удобный мессенджер на украинском, русском, немецком или английском. Отвечаю в течение дня.",up:"Наверх ↑"},
+  de:{nav_formats:"Formate",nav_video:"Videos",nav_brand:"Markenfilme",nav_visuals:"Visuals",nav_about:"Über mich",nav_packages:"Pakete",nav_cta:"Video besprechen",
+    hero_tag:"KI-VIDEOS FÜR MARKEN UND EXPERT:INNEN",hero_h1:'Werbung, <span class="champ">die wie Kino aussieht,</span> ganz ohne Dreh',hero_lead:"Ich erstelle mit künstlicher Intelligenz Markengesichter, sprechende Avatare, Maskottchen und filmische Geschichten. Ohne Kamera, Schauspieler und Studio — nur Content, der den Feed stoppt.",hero_cta:"Mein Video besprechen",hero_cta2:"Arbeiten ansehen",f1b:"20 Jahre",f1s:"im Handel — ich weiß, was verkauft",f3b:"30+ Sprachen",f3s:"für das Voiceover Ihrer Videos",
+    fm_kicker:"Was ich erschaffe",fm_title:'Vier Formate, die <span class="champ">für Ihren Umsatz arbeiten</span>',fm_sub:"Jede Arbeit ist ein echtes Beispiel. Das Gleiche erschaffe ich für Ihre Marke.",lbl_task:"Aufgabe",lbl_sol:"Lösung",
+    s1t:"Markengesicht",s1task:"eine wiedererkennbare Figur für Content — ohne teure, aufwendige Fotoshootings.",s1sol:"KI-Figur Vera — eine Person, jede Location, jeder Look, 11 Szenen.",s1for:"— für Expertinnen und Marken",
+    s2t:"Sprechender Avatar",s2task:"täglich in Reels präsent sein, ohne Kamera und Dreh.",s2sol:"realistischer Avatar mit lebendiger Mimik und Untertiteln in Ihren Farben.",s2for:"— für Coaches und Schulen",
+    s3t:"Maskottchen & Serie",s3task:"eine Marke, an die man sich erinnert und deren nächste Folge man erwartet.",s3sol:"eigenes Maskottchen und kurze Folgen mit Humor.",s3for:"— für Shops und Apps",
+    s4t:"Filmische Geschichte",s4task:"mit Emotion berühren, statt nur das Produkt zu zeigen.",s4sol:"Kurzfilm mit Dramaturgie: „Drei Klopfzeichen“ — Hoffnung in 25 Sekunden.",s4for:"— für Image- und Sozialkampagnen",
+    v_kicker:"Showreel · Reels",v_title:'Noch ein paar <span class="champ">Geschichten</span>',v_sub:"Thriller, Fantasy, Humor, Verwandlung, Werbung. Klicken Sie auf ein Video, um es im Vollbild zu sehen.",r1:"Dreh dich nicht um",r2:"Kleiner Freund",r3:"Weihnachtsfiguren",r4:"Die Stufen",r5:"Filmischer KI-Kurzfilm",r6:"Filmische Werbung",r7:"Visuelle Geschichte",
+    b_title:'Luxus-Werbung <span class="champ">für Marken</span>',b_sub:"ORLOVA ist eine Konzeptmarke — von der Idee bis zum fertigen Clip: Schmuck, Parfum und Hautpflege. Der komplette Prozess: Konzept, Bilder, Animation, Schnitt und Marken-Endcard.",b1:"Smaragd im Makro, Hände des Juweliers, Schmuck an der Hand. Licht, das Metall und Stein zum Leben erweckt.",b2:"Dark Luxury: Flakon aus der Dunkelheit, Duft auf der Haut, Packshot mit Tropfen am Glas.",b3:"Cremetextur, Wasser und Glas, strahlende Haut — verkaufen über das Gefühl.",
+    st_title:'Ihre Geschichte <span class="champ">wird lebendig</span>',st_text:"Alte Fotos eines Paares, der Hochzeit und des Kindes wurden zu einem 15-Sekunden-Film: Jedes Bild erscheint zuerst verblasst und erwacht dann in Farbe und Bewegung.",st_list:"<li>Drehbuch und Auswahl der Erinnerungen</li><li>KI-Generierung und „Belebung“ der Fotos</li><li>Schnitt, Übergänge, Full HD</li><li>Geschenk zum Jahrestag, zur Hochzeit, zum Geburtstag</li>",
+    av_title:'Ihre Marke kann <span class="champ">selbst sprechen</span>',av_sub:"KI-Avatar für Produkt- und Leistungspräsentationen, Experten- und Werbecontent.",
+    ba_title:'Vorher / <span class="champ">Nachher</span>',ba_sub:"Beispiele direkt nebeneinander — damit das Ergebnis sofort sichtbar ist.",ba1:"KI-Wiederherstellung eines Gartens",ba2:"Restaurierung eines alten Fotos",car_sub:"Drei verschiedene Karussell-Stile — direkt auf der Seite durchblättern, Format 4:5.",vis_sub:"Arbeiten nach Themen gruppiert und in natürlichen Proportionen gezeigt, ohne Beschnitt.",
+    ab_ps:"P.S. Auch dieses Foto hat künstliche Intelligenz erschaffen ✦",ab_kicker:"Über mich",ab_title:'Ich bin Olena. Zwanzig Jahre Handel — <span class="champ">jetzt KI-Kino</span>',ab_text:"Vom Marktstand bis zur Assistentin der Geschäftsführung und zwei eigenen Onlineshops. Deshalb erschaffe ich nicht nur schöne Videos, sondern solche, nach denen Menschen schreiben und kaufen.",ab_p1:"Ich denke wie eine Verkäuferin, nicht nur wie eine Designerin",ab_p2:"Sie sehen einen Test, bevor Sie das ganze Video bezahlen",ab_p3:"Das Drehbuch schreibe ich — Sie brauchen nur die Idee",
+    c_title:'Bestätigte <span class="champ">Qualifikation</span>',c_text:"Generierung von Fotos, Videos, Musik und Texten mit grundlegenden und fortgeschrittenen KI-Tools.",c_date:"Datum",c_vol:"Umfang",
+    sv_title:"Leistungen",sv1t:"KI-Werbevideos",sv1:"Konzept, Generierung, Animation, Schnitt und Musik.",sv2:"Vertikale Videos 9:16 mit Hook und werblicher Wirkung.",sv3:"Fashion-, Beauty-, Produkt-, Fantasy- und Surreal-Visuals.",sv4:"Karussells, Posts, Stories und Content-Serien.",sv5:"Digitale Moderatoren für Werbung, Präsentationen und Content.",sv6:"Idee, Drehbuch, Struktur und passende KI-Tools.",sv7:"Websites und Landingpages für Marken, Leistungen und Produkte.",sv8:"Instagram, Telegram und weitere Kanäle.",sv9:"Einfache Automatisierung von Anfragen, Antworten und Kontakten.",
+    wf_kicker:"So arbeiten wir",wf_title:'Von der Idee <span class="champ">zum fertigen Video</span>',w1t:"Briefing",w1:"Sie erzählen kurz von Produkt, Zielgruppe und wo das Video laufen soll.",w2t:"15-Sekunden-Test",w2:"Sie geben Figur, Stil und Stimmung vor dem Start frei.",w3t:"Komplettes Video",w3:"Drehbuch, Generierung, Schnitt, Untertitel, Musik.",w4t:"Korrekturen & Dateien",w4:"2 Korrekturrunden und fertige Dateien ohne Wasserzeichen.",
+    pk_kicker:"Pakete",pk_title:'Wählen Sie <span class="champ">Ihr Format</span>',pk_sub:"Der Preis hängt von Länge und Aufwand ab. Den genauen Betrag nenne ich nach einem kurzen Briefing.",price:"Preis nach Briefing",popular:"Am häufigsten gewählt",plan_cta:"Auswählen",p1n:"Start",p1d:"Ein Video für Reels",p1a:"bis 15 Sekunden, 9:16",p1b:"eine Figur",p1c:"Untertitel in Ihren Farben",p2n:"Serie",p2d:"3–5 Videos mit einer Figur",p2a:"Drehbücher für die ganze Serie",p2b:"konstante Figur",p2c:"Voiceover in jeder Sprache",p3n:"Markengesicht",p3d:"Ihre eigene KI-Figur",p3a:"Entwicklung der Figur für Ihre Marke",p3b:"Fotos und Videos in verschiedenen Szenen",p3c:"Content für einen Monat",
+    faq_title:'Häufige <span class="champ">Fragen</span>',q1:"Darf ich die Videos für Werbung nutzen?",a1:"Ja. Sie erhalten fertige Dateien ohne Wasserzeichen für Social Media und Werbung.",q2:"Was, wenn es mir nicht gefällt?",a2:"Deshalb starten wir mit einem 15-Sekunden-Test. Sie sehen Figur und Stil vor dem ganzen Video, und 2 Korrekturrunden sind inklusive.",q3:"Muss ich etwas filmen?",a3:"Nein. Eine kurze Beschreibung, Ihr Logo und ggf. ein Produktfoto reichen.",q4:"Wie lange dauert es?",a4:"Das hängt von Format und Länge ab. Den genauen Zeitplan für Test und Video legen wir im Briefing fest.",q5:"In welcher Sprache kann das Voiceover sein?",a5:"In fast jeder: KI-Stimmen sprechen Dutzende Sprachen. Auf Deutsch oder Englisch kommunizieren wir schriftlich per Nachricht; Telefonate und Sprachnachrichten sind auf Ukrainisch oder Russisch möglich. Texte in anderen Sprachen sollte eine Muttersprachlerin prüfen.",q6:"Wie läuft die Bezahlung?",a6:"50 % Anzahlung vor dem Start, der Rest nach Freigabe des Videos.",
+    ct_note:"Das erste Gespräch ist kostenlos",ct_title:'Erzählen Sie mir von Ihrer Marke — <span class="champ">ich zeige Ihnen, wie sie im Kino aussieht</span>',ct_sub:"Schreiben Sie mir gern auf Deutsch über Ihren Lieblingsmessenger. Ich antworte innerhalb eines Tages.",up:"Nach oben ↑"},
+  en:{nav_formats:"Formats",nav_video:"Video",nav_brand:"Brand films",nav_visuals:"Visuals",nav_about:"About",nav_packages:"Packages",nav_cta:"Discuss a video",
+    hero_tag:"AI VIDEO FOR BRANDS AND EXPERTS",hero_h1:'Advertising <span class="champ">that looks like cinema —</span> without a single shoot',hero_lead:"I create brand faces, talking avatars, mascots and cinematic stories with artificial intelligence. No camera, no actors, no studio — just content that stops the scroll.",hero_cta:"Discuss my video",hero_cta2:"See the work",f1b:"20 years",f1s:"in retail — I know what sells",f3b:"30+ languages",f3s:"for your video voiceover",
+    fm_kicker:"What I create",fm_title:'Four formats that <span class="champ">work for your sales</span>',fm_sub:"Every piece is a real example. I will create the same for your brand.",lbl_task:"Task",lbl_sol:"Solution",
+    s1t:"Brand face",s1task:"a recognisable character for content — without expensive, slow photo shoots.",s1sol:"AI character Vera — one person, any location, any look, 11 scenes.",s1for:"— for experts and brands",
+    s2t:"Talking avatar",s2task:"show up in Reels every day without a camera or a shoot.",s2sol:"a realistic avatar with natural expressions and subtitles in your colours.",s2for:"— for coaches and schools",
+    s3t:"Mascot & series",s3task:"a brand people remember and whose next episode they wait for.",s3sol:"your own mascot and short episodes with humour.",s3for:"— for shops and apps",
+    s4t:"Cinematic story",s4task:"move people with emotion instead of just showing the product.",s4sol:"a short film with real drama: “Three Knocks” — hope in 25 seconds.",s4for:"— for image and social campaigns",
+    v_kicker:"Showreel · Reels",v_title:'A few more <span class="champ">stories</span>',v_sub:"Thriller, fantasy, humour, transformation, advertising. Click a video to watch it full screen.",r1:"Don’t look back",r2:"A little friend",r3:"Festive characters",r4:"The steps",r5:"Cinematic AI short film",r6:"Cinematic advertising",r7:"Visual story",
+    b_title:'Luxury advertising <span class="champ">for brands</span>',b_sub:"ORLOVA is a concept brand built from idea to final film: jewellery, perfume and skincare. The full cycle: concept, frames, animation, editing and a brand end card.",b1:"Emerald in macro, a jeweller’s hands, the ring on a hand. Light that brings metal and stone to life.",b2:"Dark luxury: a bottle out of darkness, scent on skin, a packshot with a drop on glass.",b3:"Cream texture, water and glass, glowing skin — selling through sensation.",
+    st_title:'Your story <span class="champ">comes alive</span>',st_text:"Old photos of a couple, their wedding and their child became a 15-second film: each photo first appears faded, then comes alive in colour and motion.",st_list:"<li>Script and selection of memories</li><li>AI generation and photo animation</li><li>Editing, transitions, Full HD</li><li>A gift for an anniversary, wedding or birthday</li>",
+    av_title:'Your brand can <span class="champ">speak for itself</span>',av_sub:"An AI avatar to present products, services, expert and advertising content.",
+    ba_title:'Before / <span class="champ">After</span>',ba_sub:"Transformation examples side by side, so the result is visible at once.",ba1:"AI garden restoration",ba2:"Old photo restoration",car_sub:"Three different carousel styles — swipe right on the site, 4:5 format.",vis_sub:"Work grouped by theme and shown in its natural proportions, without cropping.",
+    ab_ps:"P.S. This photo was created by AI, too ✦",ab_kicker:"About me",ab_title:'I’m Olena. Twenty years in retail — <span class="champ">now AI cinema</span>',ab_text:"From a market stall to director’s assistant and two online shops of my own. That’s why I don’t just create beautiful videos — I create videos after which people message and buy.",ab_p1:"I think like a seller, not only like a designer",ab_p2:"You see a test before you pay for the full video",ab_p3:"I write the script — you only need the idea",
+    c_title:'Certified <span class="champ">qualification</span>',c_text:"Generating photos, video, music and text with basic and advanced AI tools.",c_date:"Date",c_vol:"Credits",
+    sv_title:"Services",sv1t:"AI ad videos",sv1:"Concept, generation, animation, editing and music.",sv2:"Vertical 9:16 videos with a hook and an ad-ready edit.",sv3:"Fashion, beauty, product, fantasy and surreal visuals.",sv4:"Carousels, posts, stories and content series.",sv5:"Digital presenters for ads, presentations and content.",sv6:"Idea, script, structure and the right AI tools for the job.",sv7:"Websites and landing pages for brands, services and products.",sv8:"Instagram, Telegram and other channels.",sv9:"Basic automation of enquiries, replies and lead capture.",
+    wf_kicker:"How we work",wf_title:'From idea <span class="champ">to finished video</span>',w1t:"Brief",w1:"Tell me briefly about your product, audience and where the video will run.",w2t:"15-second test",w2:"You approve the character, style and mood before we start.",w3t:"Full video",w3:"Script, generation, editing, subtitles, music.",w4t:"Edits & files",w4:"2 rounds of edits and final files without watermarks.",
+    pk_kicker:"Packages",pk_title:'Choose <span class="champ">your format</span>',pk_sub:"The price depends on length and complexity. I’ll give you the exact figure after a short brief.",price:"Price after the brief",popular:"Most chosen",plan_cta:"Choose",p1n:"Start",p1d:"One video for Reels",p1a:"up to 15 seconds, 9:16",p1b:"one character",p1c:"subtitles in your colours",p2n:"Series",p2d:"3–5 videos with one character",p2a:"scripts for the whole series",p2b:"consistent character",p2c:"voiceover in any language",p3n:"Brand face",p3d:"Your own AI character",p3a:"character designed for your brand",p3b:"photos and videos in different scenes",p3c:"a month of content",
+    faq_title:'Frequent <span class="champ">questions</span>',q1:"Can I use the videos in ads?",a1:"Yes. You get final files without watermarks for social media and advertising.",q2:"What if I don’t like it?",a2:"That’s why we start with a 15-second test. You see the character and style before the full video, and 2 rounds of edits are included.",q3:"Do I need to film anything?",a3:"No. A short description, your logo and a product photo if you have one are enough.",q4:"How long does it take?",a4:"It depends on the format and length. We agree the exact timeline for the test and the full video in the brief.",q5:"Which languages can the voiceover be in?",a5:"Almost any: AI voices speak dozens of languages. In English or German we communicate in writing; calls and voice messages are possible in Ukrainian or Russian. We recommend a native speaker checks texts in other languages.",q6:"How does payment work?",a6:"50% upfront before we start, the rest after you approve the video.",
+    ct_note:"The first consultation is free",ct_title:'Tell me about your brand — <span class="champ">I’ll show you how it looks as cinema</span>',ct_sub:"Write to me in English on your favourite messenger. I reply within a day.",up:"Back to top ↑"}
+  };
+  const els=[...document.querySelectorAll("[data-i18n]")];
+  els.forEach(el=>{el.dataset.ua=el.innerHTML;});
+  const HTML_LANG={ua:"uk",ru:"ru",de:"de",en:"en"};
+  function setLang(l){
+    if(!HTML_LANG[l])l="ua";
+    els.forEach(el=>{const k=el.dataset.i18n;const v=l==="ua"?el.dataset.ua:(I18N[l]&&I18N[l][k]);if(v!=null)el.innerHTML=v;});
+    document.documentElement.lang=HTML_LANG[l];
+    document.querySelectorAll(".lang button").forEach(b=>b.classList.toggle("on",b.dataset.lang===l));
+    try{localStorage.setItem("lang",l);}catch(e){}
+  }
+  document.querySelectorAll(".lang button").forEach(b=>b.addEventListener("click",()=>setLang(b.dataset.lang)));
+  let start="ua";
+  try{const saved=localStorage.getItem("lang");if(saved)start=saved;else{const n=(navigator.language||"").slice(0,2).toLowerCase();if(n==="de"||n==="en")start=n;}}catch(e){}
+  setLang(start);
 </script>
 </body>
 </html>
