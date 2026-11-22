@@ -266,7 +266,7 @@
 <a id="home"></a>
 <header class="nav"><div class="wrap nav-inner">
   <a href="#home" class="logo brand"><img src="assets/logo-eagle.webp" alt="" width="34" height="30"><span class="bn">OLENA ORLOVA</span></a>
-  <nav class="nav-links"><a href="#formats" data-i18n="nav_formats">Формати</a><a href="#video" data-i18n="nav_video">Відео</a><a href="#brand" data-i18n="nav_brand">Бренд-фільми</a><a href="#fashion">Fashion</a><a href="#visuals" data-i18n="nav_visuals">Візуали</a><a href="#about" data-i18n="nav_about">Про мене</a><a href="#packages" data-i18n="nav_packages">Пакети</a><a href="#faq">FAQ</a></nav>
+  <nav class="nav-links"><a href="#formats" data-i18n="nav_formats">Формати</a><a href="#video" data-i18n="nav_video">Відео</a><a href="#brand" data-i18n="nav_brand">Бренд-фільми</a><a href="#fashion">Fashion</a><a href="#about" data-i18n="nav_about">Про мене</a><a href="#packages" data-i18n="nav_packages">Пакети</a><a href="#faq">FAQ</a></nav>
   <div class="nav-right">
     <div class="lang" role="group" aria-label="Language"><button type="button" data-lang="ua">UA</button><button type="button" data-lang="ru">RU</button><button type="button" data-lang="de">DE</button><button type="button" data-lang="en">EN</button></div>
     <a href="#contact" class="nav-cta" data-i18n="nav_cta">Обговорити відео</a>
@@ -346,31 +346,6 @@
   </div>
 </div></div></section>
 
-<section class="avatar-band"><div class="wrap">
-  <div class="eyebrow" style="justify-content:center">AI Avatar</div>
-  <h2 data-i18n="av_title">Ваш бренд може <span class="champ">говорити сам</span></h2>
-  <p style="color:var(--muted);max-width:46ch;margin:0 auto" data-i18n="av_sub">AI-аватар для презентації продуктів, послуг, експертного та рекламного контенту.</p>
-  <div class="avatar-chips"><span>Avatar</span><span>Voice</span><span>Script</span><span>Visuals</span><span>Editing</span></div>
-  <div class="avatar-vid"><video src="assets/video-01.mp4" poster="assets/video-01-poster.webp" muted loop playsinline preload="none"></video><div class="cap">AI Avatar · 9:16</div></div>
-</div></section>
-
-<section class="ba-sec"><div class="wrap">
-  <div class="sec-head"><div class="eyebrow">Before / After</div><h2 data-i18n="ba_title">До / <span class="champ">Після</span></h2><p data-i18n="ba_sub">Окремі приклади трансформації — поруч, щоб результат було видно одразу.</p></div>
-  <div class="ba-block"><h4 data-i18n="ba1">AI-відновлення саду</h4><div class="ba-pair"><div class="frame"><span class="badge">BEFORE</span><img src="assets/img-26.webp" alt="" loading="lazy"></div><div class="frame"><span class="badge">AFTER</span><img src="assets/img-27.webp" alt="" loading="lazy"></div></div></div>
-  <div class="ba-block"><h4 data-i18n="ba2">Реставрація старої фотографії</h4><div class="ba-pair"><div class="frame"><span class="badge">BEFORE</span><img src="assets/img-46.webp" alt="" loading="lazy"></div><div class="frame"><span class="badge">AFTER</span><img src="assets/img-28.webp" alt="" loading="lazy"></div></div></div>
-  <div class="ba-block"><h4>Real Photo → AI Portrait</h4><div class="ba-pair"><div class="frame"><span class="badge">REAL</span><img src="assets/img-18.webp" alt="" loading="lazy"></div><div class="frame"><span class="badge">AI</span><img src="assets/img-17.webp" alt="" loading="lazy"></div></div></div>
-</div></section>
-
-<section><div class="wrap">
-  <div class="sec-head"><div class="eyebrow">Carousels · 4:5</div><h2>Social <span class="champ">Carousels</span></h2><p data-i18n="car_sub">Три різні стилі каруселей — перегортання прямо на сайті, формат 4:5.</p></div>
-  <div class="car-wrap" id="carWrap"></div>
-</div></section>
-
-<section id="visuals"><div class="wrap">
-  <div class="sec-head"><div class="eyebrow">Visual Portfolio</div><h2>AI Visuals &amp; <span class="champ">Advertising</span></h2><p data-i18n="vis_sub">Роботи згруповані за змістом і показані в природних пропорціях, без обрізання.</p></div>
-  <div id="niches"></div>
-</div></section>
-
 <section id="about"><div class="wrap"><div class="about-grid">
   <div class="about-photo arch"><img src="assets/olena-portrait.webp" alt="Olena Orlova" loading="lazy"><p class="ps" data-i18n="ab_ps">P.S. Це фото теж створене штучним інтелектом ✦</p></div>
   <div class="about-text"><div class="eyebrow" data-i18n="ab_kicker">Про мене</div><h2 data-i18n="ab_title">Я Олена. Двадцять років у торгівлі — <span class="champ">тепер AI-кіно</span></h2>
@@ -444,7 +419,7 @@
     {title:"Premium Black & Gold",badge:"EMOTIONAL",imgs:["img-12","img-13","img-14","img-15","img-16"]},
     {title:"Focus / Cognitive",badge:"EDUCATIONAL",imgs:["img-06","img-07","img-08","img-09","img-10","img-11"]}
   ];
-  document.getElementById("carWrap").innerHTML=carousels.map((c,ci)=>`
+  if(document.getElementById("carWrap"))document.getElementById("carWrap").innerHTML=carousels.map((c,ci)=>`
     <div class="carousel" data-ci="${ci}">
       <div class="chead"><h4>${c.title}</h4><span class="badge2">${c.badge}</span></div>
       <div class="car-view">${c.imgs.map((n,i)=>`<img class="${i===0?'active':''}" src="assets/${n}.webp" alt="${c.title} ${i+1}" loading="lazy">`).join("")}</div>
@@ -464,7 +439,7 @@
     {h:"Food & Hospitality",sub:"Restaurant menu design · food visualization",r:"4:5 / 16:9",items:[["img-24","Greek restaurant menu"],["img-42","Greek cuisine · wide menu"]]},
     {h:"Brand & Family Advertising",sub:"Commercial concepts · emotional product storytelling",r:"4:5 / 9:16",items:[["img-31","Ice cream campaign concept"],["img-32","Family detergent campaign"]]}
   ];
-  document.getElementById("niches").innerHTML=niches.map(n=>`
+  if(document.getElementById("niches"))document.getElementById("niches").innerHTML=niches.map(n=>`
     <div class="niche"><div class="nhead"><h3>${n.h}</h3><div class="nsub">${n.sub}</div><div class="nratio">${n.r}</div></div>
     ${n.beauty?`<div class="beauty-row"><div class="frame"><img src="assets/${n.items[0][0]}.webp" alt="${n.items[0][1]}" loading="lazy"><div style="padding:10px 12px"><div class="tag">Beauty</div><div class="cap" style="margin:0">${n.items[0][1]}</div></div></div>${n.vids.map(v=>`<div><video src="assets/${v[0]}.mp4" poster="assets/${v[0]}-poster.webp" muted loop playsinline preload="none"></video><div class="cap">${v[1]}</div></div>`).join("")}</div>`:`<div class="mason">${n.items.map(it=>`<div class="item"><div class="frame"><img src="assets/${it[0]}.webp" alt="${it[1]}" loading="lazy"></div><div class="cap">${it[1]}</div></div>`).join("")}</div>`}
     </div>`).join("");
